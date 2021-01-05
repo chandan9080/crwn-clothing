@@ -1,4 +1,4 @@
-import HomePage  from './hompage.componet'
+import HomePage  from './pages/hompage/hompage.componet'
 
 function App() {
   return <div>
