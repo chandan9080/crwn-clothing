@@ -13,3 +13,7 @@ a {
   color: black;
   font-weight: bolder;
 }
+
+* {
+  box-sizing: border-box;
+}
