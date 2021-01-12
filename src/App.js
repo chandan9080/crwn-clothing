@@ -41,7 +41,11 @@ class App extends Component {
             exact
             path="/sign"
             render={() =>
-              this.props.currentUser ? <Redirect to="/" /> : <SignInAndSignUp />
+              this.props.currentUser ? (
+                <Redirect to="/" />
+              ) : (
+                <SignInAndSignUp />
+              )
             }
           />
         </Switch>
