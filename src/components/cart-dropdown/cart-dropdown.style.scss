@@ -11,11 +11,17 @@
   right: 40px;
   z-index: 5;
 
+  .empty-message {
+    margin: 50px auto;
+    font-size: 19px;
+  }
+
   .cart-items {
     height: 340px;
     display: flex;
     flex-direction: column;
     overflow: scroll;
+
   }
 
   button {
