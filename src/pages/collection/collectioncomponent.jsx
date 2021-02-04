@@ -5,11 +5,15 @@ import './collection.styles.scss'
 import CollectionItem from '../../components/collection-items/collection-items.component'
 const CollectionPage = ({ collection }) => {
   const { items, title } = collection
-  
+ 
   return (
     <div className="collection-page">
-          <h1 className='title'>{title}</h1>
-          <div className="items">{items.map(item => (<CollectionItem key={item.id} item={item}/>))}</div>
+      <h1 className="title">{title}</h1>
+      <div className="items">
+        {items.map((item) => (
+          <CollectionItem key={item.id} item={item} />
+        ))}
+      </div>
     </div>
   )
 }
